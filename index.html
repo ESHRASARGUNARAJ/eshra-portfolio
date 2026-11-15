@@ -286,6 +286,16 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
 .legal{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:clamp(64px,9vw,130px);font-size:.9rem;color:var(--on-black-muted)}
 @media (max-width:860px){.foot-grid{grid-template-columns:1fr}.frow{grid-template-columns:1fr}}
 
+/* WhatsApp chat button */
+.wa{position:fixed;z-index:55;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:10px;padding:13px 20px 13px 15px;border-radius:99px;background:#1FAF55;color:#fff;text-decoration:none;font-weight:700;font-size:.98rem;box-shadow:0 14px 34px -12px rgba(18,120,56,.75);transition:transform .25s cubic-bezier(.2,.8,.2,1),background .25s}
+.wa:hover{transform:translateY(-4px) scale(1.03);background:#17994A}
+.wa svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.wa::after{content:"";position:absolute;inset:0;border-radius:99px;border:2px solid #1FAF55;animation:waPulse 2.4s ease-out infinite;pointer-events:none}
+@keyframes waPulse{from{opacity:.7;transform:scale(1)}to{opacity:0;transform:scale(1.35,1.7)}}
+.fitem a.walink{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding:7px 16px;border-radius:99px;background:#1FAF55;color:#fff;font-weight:700;font-size:.86rem;text-decoration:none;transition:background .25s}
+.fitem a.walink:hover{background:#17994A}
+@media (max-width:520px){.wa{padding:14px}.wa span{display:none}}
+
 /* Blur-in reveal from a legible resting state */
 @media all{
   .rv{transition:filter 1s ease,opacity 1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)}
@@ -543,7 +553,7 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
         <h3>Contact</h3>
         <div class="frow">
           <div class="fitem"><b>Email</b><span class="v" id="v-email">eshraanu@outlook.com</span><button type="button" data-copy="v-email">Copy email</button></div>
-          <div class="fitem"><b>Phone / WhatsApp</b><span class="v" id="v-phone">+91 94861 49809</span><button type="button" data-copy="v-phone">Copy number</button></div>
+          <div class="fitem"><b>Phone / WhatsApp</b><span class="v" id="v-phone">+91 94861 49809</span><button type="button" data-copy="v-phone">Copy number</button><a class="walink" href="https://wa.me/919486149809?text=Hi%20Eshra%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk%20about%20AI%20training." target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div>
         </div>
         <h3 style="margin-top:14px">Follow</h3>
         <div class="frow">
@@ -555,6 +565,8 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
     <div class="legal"><span>© 2026 Eshra Sargunaraj R · Chennai, Tamil Nadu</span><span>Updated November 2026</span></div>
   </div>
 </footer>
+
+<a class="wa" href="https://wa.me/919486149809?text=Hi%20Eshra%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk%20about%20AI%20training." target="_blank" rel="noopener" aria-label="Chat with Eshra on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8.500 10.500h.01M12 10.500h.01M15.500 10.500h.01" stroke-width="2.600"/></svg><span>Chat on WhatsApp</span></a>
 
 <script>
 (function(){
