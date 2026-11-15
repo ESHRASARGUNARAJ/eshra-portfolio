@@ -182,6 +182,11 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
 .certf p{color:var(--on-black-muted);max-width:44ch}
 .certf .yr{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:#fff;margin-top:16px}
 @media (max-width:760px){.certf{grid-template-columns:1fr}}
+.wacta{background:#fff;padding-block:clamp(48px,6vw,80px);border-top:1px solid var(--line)}
+.wacta .in{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.wacta .k{font-weight:600;color:var(--muted)}
+.wacta h2{font-size:clamp(1.9rem,3.6vw,3rem);letter-spacing:-.04em;line-height:1.05;margin-top:6px}
+.wacta .wa-btn{font-size:1.1rem;padding:18px 28px 18px 22px}
 /* Partner strip: scrolling logo marquee */
 .partners{border-block:1px solid var(--line);background:#FAFAF9;padding-block:26px 30px;overflow:hidden}
 .partners .pl{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--muted);margin-bottom:16px}
@@ -744,6 +749,14 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
   </div>
 </section>
 
+<!-- ================= WHATSAPP CTA ================= -->
+<section class="wacta" aria-label="Chat on WhatsApp">
+  <div class="in">
+    <div><p class="k">Hiring for an AI skilling or training role?</p><h2>Let's talk on <i class="s">WhatsApp</i></h2></div>
+    <a class="wa-btn" href="https://wa.me/919486149809?text=Hi%20Eshra%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk%20about%20AI%20training." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3A8.5 8.5 0 1 1 20.5 11.6z"/><path d="M9 8.6c.3 2.6 2.2 5 5.6 6.3l1.2-1.4-1.9-1-1 .9c-1-.5-1.8-1.3-2.4-2.4l.9-1-1-1.9z" fill="#fff" stroke="none"/></svg>Chat on WhatsApp</a>
+  </div>
+</section>
+
 <!-- ================= FOOTER ================= -->
 <footer class="foot" id="contact">
   <canvas id="arc3" aria-hidden="true"></canvas>
@@ -770,7 +783,6 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/919486149809?text=Hi%20Eshra%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk%20about%20AI%20training." target="_blank" rel="noopener" aria-label="Chat with Eshra on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8.500 10.500h.01M12 10.500h.01M15.500 10.500h.01" stroke-width="2.600"/></svg><span>Chat on WhatsApp</span></a>
 
 <script>
 (function(){
@@ -834,7 +846,7 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
   }
 
   /* Floating WhatsApp hides while the hero's own WhatsApp button is on screen */
-  var waF=document.querySelector('.wa'), waH=document.querySelector('.wa-btn');
+  var waF=null, waH=null;
   if(waF&&waH&&'IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){waF.classList.toggle('hide',e.isIntersecting);});}).observe(waH);}
 
   /* ---------- Method rail ---------- */
