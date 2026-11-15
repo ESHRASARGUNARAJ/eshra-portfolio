@@ -3,8 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Eshra Sargunaraj R: AI Trainer and Program Lead for AI skilling, digital inclusion and entrepreneurship. Chennai, Tamil Nadu.">
 <title>Eshra Sargunaraj R</title>
+<meta name="description" content="AI Trainer & AI Skilling Program Lead, Chennai. 500+ founders trained in AI through EDII-TN and StartupTN; 356 migrant children enrolled in school.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eshra Sargunaraj R · AI Trainer & AI Skilling Program Lead">
+<meta property="og:description" content="Teaching AI to people who were told it isn't for them. 500+ founders trained through EDII-TN and StartupTN.">
+<meta property="og:url" content="https://eshra-portfolio-jqrn.vercel.app/">
+<meta property="og:image" content="https://eshra-portfolio-jqrn.vercel.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;900&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600&family=Noto+Serif+Tamil:wght@500;600&display=swap">
 </head>
@@ -23,7 +31,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
 .in{max-width:1320px;margin:0 auto;padding-left:max(22px,env(safe-area-inset-left,0px));padding-right:max(22px,env(safe-area-inset-right,0px))}
 a{color:inherit}
@@ -71,6 +79,59 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
 .hero-row .para{font-size:1.28rem;line-height:1.5;color:var(--ink-2)}
 .hero-row .para b{font-weight:700}
 @media (max-width:860px){#sig{opacity:.55}.hero-row{grid-template-columns:1fr;gap:26px}.hero-row .stmt{padding-bottom:22px;max-width:260px}.hero-row .para{font-size:1.1rem}.hero{min-height:0}}
+/* Recruiter hero: role line, stats, CTAs, vertical reel */
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr) clamp(260px,25vw,330px);gap:clamp(36px,5vw,80px);align-items:center}
+.hero .hgrid{padding-block:clamp(36px,5vw,72px) clamp(48px,6vw,88px)}
+.hero .hgrid h1{font-size:clamp(2.2rem,5vw,4.6rem);max-width:16ch}
+.role-line{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 18px 8px 12px;margin-bottom:22px;box-shadow:0 10px 30px -20px rgba(0,0,0,.4)}
+.role-line span{width:9px;height:9px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 4px rgba(245,155,35,.22)}
+.hero .wordmark{font-size:clamp(1.3rem,3.4vw,2.6rem)}
+.hmain .para{font-size:1.22rem;line-height:1.5;color:var(--ink-2);margin-top:22px;max-width:46ch}
+.hstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:30px;border-top:3px solid var(--ink);max-width:620px}
+.hstats div{padding:16px 18px 0 0}
+.hstats div+div{padding-left:18px;border-left:1px solid var(--line)}
+.hstats b{display:block;font-weight:300;font-size:clamp(2.2rem,3.6vw,3.2rem);line-height:1;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.hstats span{display:block;margin-top:8px;font-size:.88rem;line-height:1.3;color:var(--muted);font-weight:500}
+.hcta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:34px}
+.wa-btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px 15px 18px;border-radius:99px;background:#1FAF55;color:#fff;text-decoration:none;font-weight:700;font-size:1rem;transition:background .25s,transform .25s}
+.wa-btn:hover{background:#17994A;transform:translateY(-3px)}
+.wa-btn svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.reel{margin:0}
+.phone{position:relative;aspect-ratio:478/850;border-radius:34px;overflow:hidden;background:#111;border:8px solid #111;box-shadow:0 50px 80px -40px rgba(0,0,0,.55),0 0 0 1px rgba(0,0,0,.08)}
+.phone video{width:100%;height:100%;object-fit:cover;display:block}
+.snd{position:absolute;right:12px;bottom:12px;width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.92);display:grid;place-items:center;cursor:pointer;transition:transform .25s}
+.snd:hover{transform:scale(1.08)}
+.snd svg{width:22px;height:22px;fill:none;stroke:var(--ink);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.snd svg path:first-child{fill:var(--ink)}
+.snd .w{display:none}.snd.on .w{display:block}.snd.on .x{display:none}
+.live{position:absolute;left:12px;top:12px;display:inline-flex;align-items:center;gap:7px;background:rgba(0,0,0,.55);color:#fff;font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:99px;backdrop-filter:blur(6px)}
+.live i{width:7px;height:7px;border-radius:50%;background:#FF4D4D;animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.25}}
+.reel figcaption{font-size:.88rem;color:var(--muted);margin-top:16px;line-height:1.45;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:18px;padding:12px 16px;position:relative}
+.wa{transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .35s,background .25s}
+.wa.hide{opacity:0;transform:translateY(30px);pointer-events:none}
+@media (max-width:520px){.role-line{font-size:.72rem;letter-spacing:.03em;padding:7px 14px 7px 10px}}
+.reel figcaption b{color:var(--ink)}
+@media (max-width:860px){.hgrid{grid-template-columns:1fr}.reel{max-width:300px;margin-inline:auto;width:100%}.hstats div{padding-right:10px}.hstats div+div{padding-left:12px}.hstats span{font-size:.8rem}}
+/* Partner strip */
+.partners{border-block:1px solid var(--line);background:#FAFAF9}
+.partners .in{display:flex;align-items:center;gap:28px;padding-block:22px}
+.partners .pl{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--muted);white-space:nowrap}
+.partners ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 34px;flex:1;justify-content:space-between}
+.partners li b{display:block;font-weight:800;font-size:1.06rem;letter-spacing:-.01em}
+.partners li span{display:block;font-size:.76rem;color:var(--muted);font-weight:500}
+@media (max-width:860px){.partners .in{flex-direction:column;align-items:flex-start;gap:12px}.partners ul{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px}}
+/* Awards */
+.awards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.award{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;position:relative;overflow:hidden;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s}
+.award:hover{transform:translateY(-6px);box-shadow:0 40px 60px -40px rgba(0,0,0,.3)}
+.award .ic{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,var(--sun-2),var(--sun));margin-bottom:22px}
+.award .ic svg{width:26px;height:26px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.award small{font-weight:600;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sun)}
+.award h3{font-size:1.4rem;line-height:1.15;letter-spacing:-.03em;margin:10px 0 10px}
+.award p{color:var(--muted);font-size:.96rem}
+.award .yr{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--ink);margin-top:16px}
+@media (max-width:900px){.awards{grid-template-columns:1fr}}
 
 /* Bubbles + intro */
 .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
@@ -300,8 +361,8 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
 @media all{
   .rv{transition:filter 1s ease,opacity 1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)}
   .rv.pre{filter:blur(10px);opacity:.25;transform:translateY(26px)}
-  .hero .wordmark,.hero h1,.hero-row{animation:in 1.3s cubic-bezier(.2,.7,.2,1) both}
-  .hero h1{animation-delay:.12s}.hero-row{animation-delay:.3s}
+  .hero .role-line,.hero .wordmark,.hero h1,.hmain .para,.hstats,.hcta,.reel{animation:in 1.3s cubic-bezier(.2,.7,.2,1) both}
+  .hero .wordmark{animation-delay:.06s}.hero h1{animation-delay:.12s}.hmain .para{animation-delay:.22s}.hstats{animation-delay:.3s}.hcta{animation-delay:.38s}.reel{animation-delay:.2s}
   @keyframes in{from{filter:blur(12px);opacity:.2;translate:0 22px}to{filter:blur(0);opacity:1;translate:0 0}}
 }
 </style>
@@ -319,15 +380,47 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
 <!-- ================= HERO ================= -->
 <header class="hero" id="top">
   <canvas id="sig" aria-hidden="true"></canvas>
-  <div class="in">
-    <p class="wordmark">Eshra Sargunaraj R</p>
-    <h1>Teaching <i class="s">AI</i> to people who were told it <i class="s">isn't for them</i></h1>
-    <div class="hero-row">
-      <p class="stmt">Built for learners the digital economy left behind.</p>
-      <p class="para">I help entrepreneurs, teachers, homemakers, students and migrant families become confident, critical users of AI. <b>500+ founders trained</b> through EDII-TN and StartupTN, and <b>356 children</b> brought into school.</p>
+  <div class="in hgrid">
+    <div class="hmain">
+      <p class="role-line"><span></span>AI Trainer &amp; AI Skilling Program Lead · Chennai</p>
+      <p class="wordmark">Eshra Sargunaraj R</p>
+      <h1>Teaching <i class="s">AI</i> to people who were told it <i class="s">isn't for them</i></h1>
+      <p class="para">I help entrepreneurs, teachers, homemakers, students and migrant families become confident, critical users of AI.</p>
+      <div class="hstats">
+        <div><b data-count="500">500+</b><span>founders trained in AI<br>EDII-TN · StartupTN</span></div>
+        <div><b data-count="356">356</b><span>migrant children<br>enrolled in school</span></div>
+        <div><b data-count="20">20+</b><span>workshops of<br>50–100 people</span></div>
+      </div>
+      <div class="hcta">
+        <a class="go" href="Eshra_Sargunaraj_R_Resume.pdf" download="Eshra_Sargunaraj_R_Resume.pdf"><span>Download Résumé</span><b>↓</b></a>
+        <a class="wa-btn" href="https://wa.me/919486149809?text=Hi%20Eshra%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk%20about%20AI%20training." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3A8.5 8.5 0 1 1 20.5 11.6z"/><path d="M9 8.6c.3 2.6 2.2 5 5.6 6.3l1.2-1.4-1.9-1-1 .9c-1-.5-1.8-1.3-2.4-2.4l.9-1-1-1.9z" fill="#fff" stroke="none"/></svg>Chat on WhatsApp</a>
+      </div>
     </div>
+    <figure class="reel">
+      <div class="phone">
+        <video id="reel" src="edii-talk.mp4" poster="edii-talk.jpg" muted loop playsinline preload="metadata" aria-label="Eshra teaching a session on AI and cognitive offloading at EDII-TN, Chennai"></video>
+        <button type="button" class="snd" id="snd" aria-label="Turn sound on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path class="x" d="M17 9l5 6M22 9l-5 6"/><path class="w" d="M17 8.5a5 5 0 0 1 0 7M19.5 6a8.5 8.5 0 0 1 0 12"/></svg></button>
+        <span class="live"><i></i>Live session</span>
+      </div>
+      <figcaption><b>On stage at EDII-TN, Chennai.</b> "Don't just scroll. Think." A session on AI, cognitive offloading and data privacy.</figcaption>
+    </figure>
   </div>
 </header>
+
+<!-- ================= PARTNERS ================= -->
+<section class="partners" aria-label="Organisations I have worked with">
+  <div class="in">
+    <p class="pl">Worked with</p>
+    <ul>
+      <li><b>EDII-TN</b><span>Govt. of Tamil Nadu</span></li>
+      <li><b>StartupTN</b><span>Govt. of Tamil Nadu</span></li>
+      <li><b>SRM University</b><span>Academic partner</span></li>
+      <li><b>U.S. Consulate Chennai</b><span>Young Leaders program</span></li>
+      <li><b>Thaagam Foundation</b><span>NGO · Delhi NCR</span></li>
+      <li><b>Nebulaa.ai</b><span>10 business clients</span></li>
+    </ul>
+  </div>
+</section>
 
 <!-- ================= WHAT I DO ================= -->
 <section class="band" id="do">
@@ -488,6 +581,21 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
   </div>
 </section>
 
+<!-- ================= AWARDS ================= -->
+<section class="band" id="awards" style="padding-top:0">
+  <div class="in">
+    <div class="head rv">
+      <div><span class="tag">Recognition</span><h2 class="h2">Awards &amp; leadership</h2></div>
+      <p class="lede">Selected, ranked and trained to lead, long before the first workshop.</p>
+    </div>
+    <div class="awards">
+      <article class="award rv"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg></div><small>Academic</small><h3>Academic Proficiency Award, Third Rank</h3><p>Master of Social Work, Community Development, Madurai Institute of Social Sciences.</p><p class="yr">2022–2023</p></article>
+      <article class="award rv"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7M15 21v-7M2 10l10-6 10 6z"/></svg></div><small>Leadership</small><h3>Promoting Inclusive Democracy for Young Leaders</h3><p>Selected for a one-year certificate program by the U.S. Consulate General, Chennai, with SOCO Trust.</p><p class="yr">Jul 2022 – Aug 2023</p></article>
+      <article class="award rv"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14M8 11h8M4 14c0 4 4 7 8 7s8-3 8-7"/></svg></div><small>Service</small><h3>National Cadet Corps, Naval Wing</h3><p>2 TN Naval Unit, Madurai. Discipline, teamwork and leadership through undergraduate years.</p><p class="yr">The American College</p></article>
+    </div>
+  </div>
+</section>
+
 <!-- ================= VOICES ================= -->
 <section class="band grey" id="voices">
   <div class="in">
@@ -558,7 +666,7 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
         <h3 style="margin-top:14px">Follow</h3>
         <div class="frow">
           <div class="fitem"><b>LinkedIn</b><a class="v" href="https://www.linkedin.com/in/eshra-sargunaraj-r-8899641a1" target="_blank" rel="noopener">eshra-sargunaraj-r ↗</a></div>
-          <div class="fitem"><b>Open to</b><span>Program Lead, AI Trainer and L&amp;D roles, in Tamil Nadu or anywhere in India</span></div>
+          <div class="fitem"><b>Open to</b><span>Program Lead, AI Trainer and L&amp;D roles, in Tamil Nadu or anywhere in India</span><a class="walink" style="background:#fff;color:var(--ink)" href="Eshra_Sargunaraj_R_Resume.pdf" download="Eshra_Sargunaraj_R_Resume.pdf">Download résumé ↓</a></div>
         </div>
       </div>
     </div>
@@ -619,6 +727,19 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
     el.style.left=p[0]+'%'; el.style.top=p[1]+'%'; el.className='bub'+(d===0?' on':d===1?' near':d===2?' mid':' far');});
     spot.classList.remove('run'); void spot.offsetWidth; spot.classList.add('run');}
   place(); if(!reduce) setInterval(function(){off=(off+1)%NB; place();},3400);
+
+  /* ---------- Hero reel: play muted while visible, tap for sound ---------- */
+  var reel=document.getElementById('reel'), snd=document.getElementById('snd');
+  if(reel){
+    var tryPlay=function(){var p=reel.play(); if(p&&p.catch) p.catch(function(){});};
+    if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting) tryPlay(); else reel.pause();});},{threshold:.35}).observe(reel);} else tryPlay();
+    snd.addEventListener('click',function(){reel.muted=!reel.muted; if(!reel.muted){reel.currentTime=0; tryPlay();} snd.classList.toggle('on',!reel.muted); snd.setAttribute('aria-label',reel.muted?'Turn sound on':'Turn sound off');});
+    reel.addEventListener('click',function(){ if(reel.paused) tryPlay(); else reel.pause(); });
+  }
+
+  /* Floating WhatsApp hides while the hero's own WhatsApp button is on screen */
+  var waF=document.querySelector('.wa'), waH=document.querySelector('.wa-btn');
+  if(waF&&waH&&'IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){waF.classList.toggle('hide',e.isIntersecting);});}).observe(waH);}
 
   /* ---------- Method rail ---------- */
   var ring='<svg class="ring" viewBox="0 0 170 170" aria-hidden="true"><path d="M5 85a80 80 0 0 1 160 0" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-dasharray=".1 8.2"/><path d="M165 85a80 80 0 0 1-160 0" fill="none" stroke="#fff" stroke-width="3.4"/></svg>';
