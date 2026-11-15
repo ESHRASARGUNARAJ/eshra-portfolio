@@ -214,6 +214,11 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
 #research .paper.main h3{font-size:clamp(1.6rem,2.6vw,2.2rem)}
 @media (max-width:900px){#research .papers{grid-template-columns:1fr}#research .paper.main{grid-template-columns:96px minmax(0,1fr);gap:18px}}
 @media (max-width:560px){#research .paper.main{grid-template-columns:1fr}#research .paper.main>img{width:130px}}
+@media (max-width:860px){
+  .hero .creds{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:22px;gap:10px;margin-inline:-22px;padding:4px 22px 8px;scrollbar-width:none}
+  .creds::-webkit-scrollbar{display:none}
+  .creds li{flex:0 0 78%;scroll-snap-align:start}
+}
 /* Partner strip: scrolling logo marquee */
 .partners{border-block:1px solid var(--line);background:#FAFAF9;padding-block:26px 30px;overflow:hidden}
 .partners .pl{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--muted);margin-bottom:16px}
@@ -556,11 +561,6 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
         <p class="lede" style="margin-top:26px;max-width:24ch">Connected skills that take a learner from fear of AI to earning with it.</p>
       </div>
     </div>
-    <div class="gaps">
-      <article class="gap rv"><small>Learners</small><h3>The fear gap</h3><p>Founders, teachers and homemakers know AI matters but feel it isn't for them, so they freeze. I take them from panic to using AI in their work.</p></article>
-      <article class="gap rv"><small>Small businesses</small><h3>The visibility gap</h3><p>Local shops and showrooms can't compete online. I run the campaigns, content and lead generation that get them seen.</p></article>
-      <article class="gap rv"><small>Communities</small><h3>The access gap</h3><p>Some people are shut out by missing documents, poverty or migration. I worked the system to get their children into school.</p></article>
-    </div>
   </div>
 </section>
 
@@ -601,16 +601,9 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
 </section>
 
 <!-- ================= IMPACT ================= -->
-<section class="photo" id="impact">
-  <img src="teaching-metrics.jpg" alt="Eshra presenting growth metrics to a room of entrepreneurs at an EDII-TN program" width="1536" height="1024">
-  <canvas id="arc2" aria-hidden="true"></canvas>
+<section class="band" id="impact">
   <div class="in">
-    <div class="rv"><span class="tag">Impact</span><h2 class="h2">A record of measurable change</h2></div>
-    <div class="rv"><p class="lede">From training halls at EDII-TN to slum classrooms in Noida, every program is measured by what learners can do afterwards.</p><a class="go blue" href="#numbers"><span>See the numbers</span><b>↘</b></a></div>
-  </div>
-</section>
-<section class="band" id="numbers" style="padding-top:0">
-  <div class="in">
+    <div class="head rv"><div><span class="tag">Impact</span><h2 class="h2">A record of measurable change</h2></div><p class="lede">From training halls at EDII-TN to slum classrooms in Noida, measured by what learners can do afterwards.</p></div>
     <div class="nums">
       <div class="num rv"><p class="n" data-count="500">500+</p><p class="l">entrepreneurs and founders trained in AI</p><p class="s">EDII-TN, StartupTN</p></div>
       <div class="num rv"><p class="n" data-count="2000">2,000+</p><p class="l">women reached with education awareness</p><p class="s">Noida, Greater Noida</p></div>
@@ -731,10 +724,9 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
         <h3>Education Team Leader</h3><p class="org">Thaagam Foundation, Tamil Nadu and Delhi NCR</p>
         <ul>
           <li><strong>Enrolled 356 migrant children in government schools</strong> under the RTE Act, many with no prior certificates.</li>
-          <li>Led AI foundation education across 12 slum communities, reaching <strong>1,000+ children</strong> with a team of around 25 teachers. Parents came to tell me their children talked about the classes at home.</li>
-          <li>Reached <strong>2,000+ women</strong> in Noida and Greater Noida through direct conversations on education awareness and menstrual hygiene, including sanitary napkin distribution. I also ran the foundation&#39;s <strong>Meta ads</strong> campaigns.</li>
+          <li>Led AI foundation education across 12 slum communities, reaching <strong>1,000+ children</strong> with a team of around 25 teachers.</li>
+          <li>Reached <strong>2,000+ women</strong> in Noida and Greater Noida on education awareness and menstrual hygiene, and ran the foundation&#39;s <strong>Meta ads</strong> campaigns.</li>
           <li>Designed an <strong>AI Training-of-Trainers program</strong> for primary teachers in Uttar Pradesh; led NIOS accreditation.</li>
-          <li>Launched a <strong>Digital Literacy &amp; Basic Computer Training</strong> program in an outdoor slum in Uttar Pradesh, with <strong>10 tablets donated</strong> as the first step toward 1,000.</li>
           <li>Trained field educators in <strong>child psychology for the field</strong> and wrote their field guide: emotional safety before discipline, behaviour as communication, predictable routines, and support for children who have lived through instability or trauma.</li>
         </ul></div></div>
       <div class="role rv"><div><p class="when">During college</p></div><div>
@@ -776,7 +768,6 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
       <div class="topic rv"><h3>Entrepreneurship &amp; digital growth</h3><p class="sub">Getting small businesses seen.</p><div class="chips"><span>Startup ideation</span><span>Business model canvas</span><span>YouTube strategy</span><span>AI video creation</span><span>Meta ads</span><span>WhatsApp &amp; SMS marketing</span><span>CRM for MSMEs</span></div></div>
       <div class="topic rv"><h3>Responsible AI</h3><p class="sub">Use AI without being used by it.</p><div class="chips"><span>AI ethics</span><span>Surveillance capitalism</span><span>AI colonialism</span><span>Cognitive offloading</span><span>AI sycophancy</span><span>How RLHF works</span><span>Child online safety</span></div></div>
     </div>
-    <div class="toolbox rv"><span class="tag">Tools I teach and use</span><div class="tgrid" id="tgrid"></div></div>
   </div>
 </section>
 
@@ -862,7 +853,7 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
     var mobile=window.innerWidth<860;
     if(hs<1) arcs(sig,{ox:function(w){return mobile?w*1.02:w*1.04},oy:function(w,h){return mobile?h*0.2:h*0.9},r0:mobile?.2:.28,step:mobile?.075:.09,
       a0:Math.PI*(mobile?.55:1.0),a1:Math.PI*(mobile?1.25:1.62),color:'#3D6BFF',t:t,grow:intro,push:hs*2.2,spin:hs*.5,n:mobile?6:5});
-    var pp=prog(photo); if(pp>0&&pp<1) arcs(arc2,{ox:function(w){return w*0.0},oy:function(w,h){return h*1.0},r0:.3,step:.075,a0:-Math.PI*.5,a1:Math.PI*.02,color:'#3D6BFF',t:t,grow:clamp((pp-.18)*2.4,0,1),n:5});
+    var pp=photo?prog(photo):0; if(photo&&pp>0&&pp<1) arcs(arc2,{ox:function(w){return w*0.0},oy:function(w,h){return h*1.0},r0:.3,step:.075,a0:-Math.PI*.5,a1:Math.PI*.02,color:'#3D6BFF',t:t,grow:clamp((pp-.18)*2.4,0,1),n:5});
     var fp=prog(foot); if(fp>0) arcs(arc3,{ox:function(w){return w*1.0},oy:function(w,h){return h*0.0},r0:.12,step:.05,a0:Math.PI*.5,a1:Math.PI*1.0,color:'#3D6BFF',t:t,grow:clamp(fp*2.6,0,1),n:5,alpha:.8});
     if(!reduce) requestAnimationFrame(paint);
   }
@@ -921,7 +912,7 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
     ['AI voice',[['ElevenLabs','wave',45]]],
     ['Marketing & social',[['Meta Business Suite','mega',215],['LinkedIn','brief',200],['YouTube Studio','cam',5],['WATI','msg',140]]],
     ['CRM & sales',[['Zoho Bigin','funnel',95]]]];
-  document.getElementById('tgrid').innerHTML=groups.map(function(g){return '<div class="tcard"><div class="thead"><h3>'+g[0].replace('&','&amp;')+'</h3><span class="tcount">'+g[1].length+(g[1].length>1?' tools':' tool')+'</span></div><div class="tchips">'+g[1].map(function(t){return '<span class="tchip" style="--h:'+t[2]+'"><i>'+svg(G[t[1]])+'</i>'+t[0]+'</span>';}).join('')+'</div></div>';}).join('');
+  var tg=document.getElementById('tgrid'); if(tg) tg.innerHTML=groups.map(function(g){return '<div class="tcard"><div class="thead"><h3>'+g[0].replace('&','&amp;')+'</h3><span class="tcount">'+g[1].length+(g[1].length>1?' tools':' tool')+'</span></div><div class="tchips">'+g[1].map(function(t){return '<span class="tchip" style="--h:'+t[2]+'"><i>'+svg(G[t[1]])+'</i>'+t[0]+'</span>';}).join('')+'</div></div>';}).join('');
 
   /* ---------- Reveal, count-up, dots, copy ---------- */
   var rv=document.querySelectorAll('.rv');
