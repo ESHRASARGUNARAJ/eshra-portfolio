@@ -203,6 +203,17 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
 .case dt{font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sun);padding-top:3px}
 .case dd{margin:0;color:var(--ink-2)}
 @media (max-width:900px){.case{grid-template-columns:1fr}.case>img{min-height:0;aspect-ratio:16/10}.case dl div{grid-template-columns:1fr;gap:4px}}
+.rstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+.rstats div{background:var(--mist);border-radius:14px;padding:12px}
+.rstats b{display:block;font-weight:300;font-size:1.9rem;letter-spacing:-.04em;line-height:1;color:var(--sun)}
+.rstats span{display:block;font-size:.78rem;line-height:1.3;color:var(--muted);margin-top:6px}
+.rlink{display:inline-block;margin-top:14px;font-weight:700;color:var(--sun);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px}
+@media (max-width:520px){.rstats{grid-template-columns:1fr}}
+#research .papers{grid-template-columns:repeat(2,minmax(0,1fr))}
+#research .paper.main{grid-column:1/-1;grid-template-columns:180px minmax(0,1fr);gap:34px}
+#research .paper.main h3{font-size:clamp(1.6rem,2.6vw,2.2rem)}
+@media (max-width:900px){#research .papers{grid-template-columns:1fr}#research .paper.main{grid-template-columns:96px minmax(0,1fr);gap:18px}}
+@media (max-width:560px){#research .paper.main{grid-template-columns:1fr}#research .paper.main>img{width:130px}}
 /* Partner strip: scrolling logo marquee */
 .partners{border-block:1px solid var(--line);background:#FAFAF9;padding-block:26px 30px;overflow:hidden}
 .partners .pl{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--muted);margin-bottom:16px}
@@ -567,7 +578,7 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
           <p class="ck">Thaagam Foundation · Noida &amp; Greater Noida, Uttar Pradesh</p>
           <h3>356 migrant children into government schools</h3>
           <dl>
-            <div><dt>Problem</dt><dd>Children of migrant families were out of school. Many had no birth or transfer certificates, and my survey of 500+ households in 13 communities showed the barrier was structural, not a lack of interest.</dd></div>
+            <div><dt>Problem</dt><dd>Children of migrant families were out of school. My survey of 500+ households in 13 slum clusters found 62% of children aged 6–14 out of school, with 62% of families blocked by missing transfer certificates or documents. Yet 98% of the children said they wanted to study.</dd></div>
             <div><dt>What I did</dt><dd>Mobilised families community by community, prepared and supported the documentation, and worked with district education authorities to admit children under the Right to Education Act.</dd></div>
             <div><dt>Result</dt><dd><b>356 children enrolled</b> in government schools, and 1,000+ children reached through AI foundation classes across 12 slum communities with a team of about 25 teachers.</dd></div>
           </dl>
@@ -777,7 +788,10 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
       <p class="lede">My research on migrant education shaped how I design programs for people the system misses.</p>
     </div>
     <div class="papers">
-      <article class="paper main rv"><img src="research-cover.jpg" alt="Cover of the research report on barriers to education for migrant children" width="700" height="1050" loading="lazy"><div><p class="k">Independent field research</p><h3>Barriers to Education for Migrant Children in Urban Slums</h3><p>500+ households across 13 communities in Noida and Greater Noida: documentation, dropout, economic distress and migration.</p><p class="find">Finding: exclusion is structural, not motivational.</p></div></article>
+      <article class="paper main rv"><img src="research-cover.jpg" alt="Cover of the research report The Paper Wall and the Poverty Trap" width="700" height="1050" loading="lazy"><div><p class="k">Independent field research, 2025</p><h3>The &ldquo;Paper Wall&rdquo; and the Poverty Trap</h3><p>Barriers to education for migrant children in Noida and Greater Noida. Mixed-methods study of 500+ households in 13 slum clusters.</p>
+        <div class="rstats"><div><b>62%</b><span>of families blocked by missing documents</span></div><div><b>62%</b><span>of children aged 6–14 out of school</span></div><div><b>98%</b><span>of children said they want to study</span></div></div>
+        <p class="find">Finding: exclusion is structural, not motivational. The children are ready; the system must respond.</p>
+        <a class="rlink" href="Paper_Wall_Migrant_Education_Eshra_Sargunaraj_R.pdf" target="_blank" rel="noopener">Read the full report (PDF) ↗</a></div></article>
       <article class="paper rv"><p class="k">Postgraduate thesis</p><h3>Socio-Economic Conditions of Manual Scavengers in Madurai North</h3><p>Livelihoods, challenges and social realities in Madurai North Block.</p></article>
       <article class="paper rv"><p class="k">Chalk &amp; Dust, as ESHRA.R</p><h3>Writing on AI and the Global South</h3><p>AI ethics, surveillance capitalism, and education and technology in the Global South.</p></article>
     </div>
