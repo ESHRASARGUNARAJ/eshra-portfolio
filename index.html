@@ -219,6 +219,12 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
   .creds::-webkit-scrollbar{display:none}
   .creds li{flex:0 0 78%;scroll-snap-align:start}
 }
+.fgrid{columns:3 300px;column-gap:16px}
+.fg{break-inside:avoid;margin:0 0 16px;background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.fg img{display:block;width:100%;height:auto}
+.fg figcaption{padding:12px 16px 14px}
+.fg figcaption b{display:block;font-size:.95rem;line-height:1.3;letter-spacing:-.01em}
+.fg figcaption span{display:block;font-family:var(--serif);font-style:italic;color:var(--muted);font-size:1rem;margin-top:2px}
 /* Partner strip: scrolling logo marquee */
 .partners{border-block:1px solid var(--line);background:#FAFAF9;padding-block:26px 30px;overflow:hidden}
 .partners .pl{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--muted);margin-bottom:16px}
@@ -499,7 +505,7 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
       <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#3D6BFF" stroke-width="2.6" stroke-linecap="round"><circle cx="5" cy="19" r="1.6" fill="#3D6BFF" stroke="none"/><path d="M5 13a6 6 0 0 1 6 6"/><path d="M5 7a12 12 0 0 1 12 12" stroke-dasharray=".1 4.2"/></svg>
       Eshra
     </a>
-    <div class="links"><a href="#story">Story</a><a href="#cases">Cases</a><a href="#impact">Impact</a><a href="#work">Work</a><a href="#programs">Programs</a><a class="keep" href="#contact">Contact</a></div>
+    <div class="links"><a href="#story">Story</a><a href="#cases">Cases</a><a href="#impact">Impact</a><a href="#work">Work</a><a href="#field">Field</a><a class="keep" href="#contact">Contact</a></div>
     <a class="navwa" href="https://wa.me/919486149809?text=Hi%20Eshra%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk%20about%20AI%20training." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3A8.5 8.5 0 1 1 20.5 11.6z"/><path d="M9 8.6c.3 2.6 2.2 5 5.6 6.3l1.2-1.4-1.9-1-1 .9c-1-.5-1.8-1.3-2.4-2.4l.9-1-1-1.9z" fill="#fff" stroke="none"/></svg><span>WhatsApp</span></a>
   </div>
 </nav>
@@ -767,6 +773,32 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
       <div class="topic rv"><h3>AI literacy &amp; capacity building</h3><p class="sub">From first prompt to training others.</p><div class="chips"><span>Practical AI tools</span><span>Training-of-Trainers</span><span>AI for teachers</span><span>Child psychology for educators</span><span>Trauma-informed classrooms</span><span>Metacognitive learning</span><span>AI prototyping &amp; MVPs</span><span>SHG AI enablement</span></div></div>
       <div class="topic rv"><h3>Entrepreneurship &amp; digital growth</h3><p class="sub">Getting small businesses seen.</p><div class="chips"><span>Startup ideation</span><span>Business model canvas</span><span>YouTube strategy</span><span>AI video creation</span><span>Meta ads</span><span>WhatsApp &amp; SMS marketing</span><span>CRM for MSMEs</span></div></div>
       <div class="topic rv"><h3>Responsible AI</h3><p class="sub">Use AI without being used by it.</p><div class="chips"><span>AI ethics</span><span>Surveillance capitalism</span><span>AI colonialism</span><span>Cognitive offloading</span><span>AI sycophancy</span><span>How RLHF works</span><span>Child online safety</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FIELD ================= -->
+<section class="band grey" id="field">
+  <div class="in">
+    <div class="head rv">
+      <div><span class="tag">From the field</span><h2 class="h2">Where the work happens</h2></div>
+      <p class="lede">Migrant settlements in Noida and Aligarh, government schools across Tamil Nadu, women’s collectives and university classrooms. Children’s faces are blurred to protect their privacy.</p>
+    </div>
+    <div class="fgrid">
+      <figure class="fg rv"><img src="field/noida-selfie.jpg" alt="With children in a migrant labour settlement, Noida, Uttar Pradesh" loading="lazy"><figcaption><b>With children in a migrant labour settlement</b><span>Noida, Uttar Pradesh</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/noida-household.jpg" alt="Household survey for the Paper Wall study, Noida, Uttar Pradesh" loading="lazy"><figcaption><b>Household survey for the Paper Wall study</b><span>Noida, Uttar Pradesh</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/aligarh-door.jpg" alt="Interviewing families on income, work and schooling, Aligarh, Uttar Pradesh" loading="lazy"><figcaption><b>Interviewing families on income, work and schooling</b><span>Aligarh, Uttar Pradesh</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/noida-alley.jpg" alt="Temporary labour housing beside new high-rises, Noida, Uttar Pradesh" loading="lazy"><figcaption><b>Temporary labour housing beside new high-rises</b><span>Noida, Uttar Pradesh</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/aligarh-interview.jpg" alt="Listening first: field notes with a migrant family, Aligarh, Uttar Pradesh" loading="lazy"><figcaption><b>Listening first: field notes with a migrant family</b><span>Aligarh, Uttar Pradesh</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/shg-women.jpg" alt="Session with women’s Self-Help Group members (MGNREGA), Tamil Nadu" loading="lazy"><figcaption><b>Session with women’s Self-Help Group members (MGNREGA)</b><span>Tamil Nadu</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/aligarh-group.jpg" alt="With Bengali-speaking migrant families, Aligarh, Uttar Pradesh" loading="lazy"><figcaption><b>With Bengali-speaking migrant families</b><span>Aligarh, Uttar Pradesh</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/childline-1.jpg" alt="Teaching children about Childline 1098, Government school, Tamil Nadu" loading="lazy"><figcaption><b>Teaching children about Childline 1098</b><span>Government school, Tamil Nadu</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/madurai-rte.jpg" alt="Right to Education awareness in a government school, Madurai, Tamil Nadu" loading="lazy"><figcaption><b>Right to Education awareness in a government school</b><span>Madurai, Tamil Nadu</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/namakkal-learning.jpg" alt="Play-based learning with primary students, Namakkal, Tamil Nadu" loading="lazy"><figcaption><b>Play-based learning with primary students</b><span>Namakkal, Tamil Nadu</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/aligarh-dump.jpg" alt="Walking the settlement: urban poverty up close, Aligarh, Uttar Pradesh" loading="lazy"><figcaption><b>Walking the settlement: urban poverty up close</b><span>Aligarh, Uttar Pradesh</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/periyar-students.jpg" alt="Community development session with undergraduates, Periyar University, Salem" loading="lazy"><figcaption><b>Community development session with undergraduates</b><span>Periyar University, Salem</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/noida-children.jpg" alt="Door-to-door in a migrant settlement, Noida, Uttar Pradesh" loading="lazy"><figcaption><b>Door-to-door in a migrant settlement</b><span>Noida, Uttar Pradesh</span></figcaption></figure>
+      <figure class="fg rv"><img src="field/namakkal-class.jpg" alt="Classroom session in a government school, Namakkal, Tamil Nadu" loading="lazy"><figcaption><b>Classroom session in a government school</b><span>Namakkal, Tamil Nadu</span></figcaption></figure>
     </div>
   </div>
 </section>
