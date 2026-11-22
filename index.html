@@ -497,6 +497,51 @@ i.s,em.s,.s{font-family:var(--serif);font-style:italic;font-weight:500;letter-sp
   .hero .wordmark{animation-delay:.06s}.hero h1{animation-delay:.12s}.hmain .para{animation-delay:.22s}.hstats{animation-delay:.3s}.hcta{animation-delay:.38s}.reel{animation-delay:.2s}
   @keyframes in{from{filter:blur(12px);opacity:.2;translate:0 22px}to{filter:blur(0);opacity:1;translate:0 0}}
 }
+
+/* ===== Natural, open layout: no boxed cards or pills; type, rules and space instead ===== */
+.tag,.hero .tag,.band .tag{background:none!important;padding:0;border-radius:0;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tag::before{width:18px;height:2px;border-radius:0;background:var(--sun)}
+.role-line,.hero .role-line{background:none;border:0;box-shadow:none;padding:0;border-radius:0;color:inherit;font-size:.82rem;letter-spacing:.16em}
+.role-line span,.hero .role-line span{width:22px;height:2px;border-radius:0;box-shadow:none;background:#3D6BFF}
+.creds li{background:none;border:0;border-radius:0;padding:12px 0;border-top:1px solid rgba(255,255,255,.12)}
+.creds li:last-child{border-bottom:1px solid rgba(255,255,255,.12)}
+.creds i{border-radius:6px}
+.reel figcaption,.hero .reel figcaption{background:none;border:0;padding:0;backdrop-filter:none}
+.award{background:none;border:0;border-radius:0;padding:24px 0 0;border-top:2px solid var(--ink)}
+.award:hover{transform:none;box-shadow:none}
+.award .ic.logo{border:0;border-radius:0;background:none;width:auto;height:56px;justify-content:start}
+.award .ic.logo img{max-height:56px;max-width:120px}
+.certf{background:none;color:inherit;border-radius:0;padding:0 0 clamp(40px,5vw,64px);border-bottom:1px solid var(--line);margin-bottom:clamp(40px,5vw,64px)}
+.certf p{color:var(--muted)}.certf .yr{color:var(--ink)}.certf small{color:var(--sun)}
+.certf img{border-radius:0;box-shadow:0 30px 60px -36px rgba(0,0,0,.45)}
+.case{background:none;border-radius:0;overflow:visible;gap:clamp(24px,4vw,56px);padding-bottom:clamp(36px,5vw,64px);border-bottom:1px solid var(--line)}
+.case:last-child{border-bottom:0}
+.case>img{border-radius:0}
+.cbody{padding:0}
+.rstats div{background:none;border-radius:0;padding:10px 0 0;border-top:1px solid var(--line)}
+.track li{background:none;border:0;border-radius:0;padding:0 18px;border-left:1px solid var(--line)}
+.track li:hover{transform:none;box-shadow:none}
+.partners{background:none}
+.ecard{background:none;border-radius:0;padding:18px 0;border-top:1px solid var(--line)}
+.ecard .el{border-radius:0;background:none;padding:0}
+.fg{background:none;border:0;border-radius:0}
+.fg figcaption{padding:10px 0 4px}
+.ncard{background:none;border-radius:0;padding:0}
+.ncard:hover{transform:none;box-shadow:none}
+.ncard .ph{border-radius:0}
+.paper{background:none;border-radius:0;padding:24px 0 0;border-top:2px solid var(--ink)}
+.paper.main img{border-radius:0}
+.edu div{background:none;border-radius:0;padding:16px 0;border-top:1px solid var(--line)}
+.tcard{background:none;border-radius:0;padding:20px 0 0;border-top:2px solid var(--ink)}
+.voice{background:none;border-radius:0;padding:0}
+.voice:hover{transform:none}
+.voice img{border-radius:0;box-shadow:0 20px 40px -30px rgba(0,0,0,.35);border:1px solid var(--line)}
+.voice figcaption{color:var(--ink-2);padding:0}
+.mission{border-radius:0}
+.couplet img,.ophoto img,.field{border-radius:0}
+.chips span{border-radius:0;padding:4px 0;margin-right:14px;background:none!important;border:0;border-bottom:1px solid var(--line)}
+.role .pill{border-radius:0;background:none;padding:0;color:var(--sun);letter-spacing:.12em}
+.phone{border-radius:22px}
 </style>
 
 <nav class="nav" aria-label="Main">
